@@ -1,0 +1,103 @@
+mysql:
+  host: 'localhost'
+  port: 3306
+  user: 'root'
+  password: 'admin'
+  database: 'golf'
+
+clubs:
+  putter:
+    material: "STICK"
+    name: "&7Putter"
+    lore:
+      - "This is a lore"
+    modeldata: 1
+    minforce: 0.1
+    maxforce: 0.2
+    minhigh: 0
+    maxhigh: 0.5
+    chargetime: 20
+
+clubs-mini:
+  putter:
+    material: "STICK"
+    name: "&7Putter for Mini Golf"
+    lore:
+      - "This is a lore"
+    modeldata: 1
+    minforce: 0.02
+    maxforce: 0.05
+    minhigh: 0
+    maxhigh: 0.5
+    chargetime: 20
+    
+clubs-bowling:
+  bowling:
+    material: "STICK"
+    name: "&7Bowling"
+    lore:
+      - "This is a lore"
+    modeldata: 1
+    minforce: 0.3
+    maxforce: 0.5
+    minhigh: 0
+    maxhigh: 0.1
+    chargetime: 20
+   
+# Ball place
+cant-place-ball: "&cYou cannot place a ball here"
+already-placed-ball: "&cYou already placed a ball !"
+already-in-use: "&cA player already placed his ball here !"
+
+# Commands
+help-player:
+  - "&b/golf stats"
+  - "&b/golf hide"
+  - "&b/golf newball"
+help-admin:
+  - "&b/golf addgolfarea [Name]"
+  - "&b/golf removegolfarea [Name]"
+  - "&b/golf sethole [Name]"
+  - "&b/golf addspawn"
+  - "&b/golf removespawn"
+  - "&b/golf listspawns"
+
+hide-on: "&eYour ball name is hidden"
+hide-off: "&eYour ball name is no longer hidden"
+
+
+stats-first-line: "&e============| Your stats / Page %page% |============"
+stats-format-completed: "&e%cauldron% : %best%"
+stats-format-not-completed: "&e%cauldron% : &cNot completed"
+stats-page-doesnt-exist: "&cThis page doesn't exist"
+stats-next-page: "&eType /golf stats %nextpage% for next page"
+terracota-strength: 0.5
+    
+whistle:
+  name: "Whistle"
+  material: "DIAMOND_PICKAXE"
+  modeldata: 1
+  
+# Whistle
+no-ball: "&cYou don't have a ball to recall"
+no-previous-loc: "&cYour ball doesn't have a previous location"
+ball-recalled: "&aYour ball was recalled at its latest location"
+
+#Win
+win-message: "&eYou succeeded in %shots% shots !"
+win-message-party-members: "&e%player% won in %shots% shots for the hole %hole%"
+
+new-personal-best-title: "&eNew personal best !"
+
+reward-win: "give %player% apple"
+reward-24h: "give %player% apple"
+
+# BOWLING
+
+already-playing: "&cSomeone is already playing !"
+no-whistle: "&cYou don't have a shot to cancel."
+
+pinMaterial: "GLASS"
+pinModelData: 0
+detectRange: 0.5 # ball detection range for pins
+cooldownCollide: 10 # in ticks

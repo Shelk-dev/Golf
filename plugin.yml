@@ -1,0 +1,11 @@
+name: Golf
+author: Shelk
+version: 1.0
+main: com.shelk.Golf
+depend: [WorldEdit, WorldGuard]
+api-version: 1.17
+commands:
+  golf:
+    description: Golf commands
+  golfgive:
+    description: Give golf items
